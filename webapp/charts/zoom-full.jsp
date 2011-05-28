@@ -5,10 +5,10 @@
 <link type="text/css" rel="stylesheet" href="ex.css?3.2" />
 <script type="text/javascript" src="protovis-r3.2.js"></script>
 <script type="text/javascript">
-	var start = new Date(1990, 0, 1);
-	alert(start);
+	var start = new Date(1990, 1, 1);
+	//alert(start);
 	var year = 1000 * 60 * 60 * 24 * 365;
-	alert(year);
+	//alert(year);
 	var data = pv.range(0, 20, .02)
 			.map(
 					function(x) {
@@ -19,6 +19,62 @@
 									* Math.pow(1.18, x) + Math.random() * .1
 						};
 					});
+	data = [ {
+		x : new Date(1990, 1, 1),
+		y : 100
+	}
+	, {
+		x : new Date(1990, 1, 2),
+		y : 200
+	}
+	, {
+		x : new Date(1990, 1, 3),
+		y : 300
+	}
+	, {
+		x : new Date(1990, 1, 4),
+		y : 500
+	}
+	, {
+		x : new Date(1990, 1, 5),
+		y : 100
+	}
+	, {
+		x : new Date(1990, 1, 6),
+		y : 200
+	}
+	, {
+		x : new Date(1990, 1, 7),
+		y : 400
+	}
+	, {
+		x : new Date(1990, 1, 8),
+		y : 500
+	}
+	, {
+		x : new Date(1990, 1, 9),
+		y : 800
+	}
+	, {
+		x : new Date(1990, 1, 10),
+		y : 600
+	}
+	, {
+		x : new Date(1990, 1, 11),
+		y : 500
+	}
+	, {
+		x : new Date(1990, 1, 12),
+		y : 150
+	}
+	, {
+		x : new Date(1990, 1, 13),
+		y : 200
+	}
+	, {
+		x : new Date(1990, 1, 14),
+		y : 600
+	} ];
 	var end = data[data.length - 1].x;
 </script>
 
